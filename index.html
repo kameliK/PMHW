@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance - Automated Face Recognition System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Face Recognition Theme Elements -->
+    <div class="face-scan-overlay"></div>
+    <div class="scanning-grid"></div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo-face">
+                    <div class="face-circle">
+                        <div class="eye eye-left"></div>
+                        <div class="eye eye-right"></div>
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span>Face Recognition Active</span>
+            </div>
+            
+            <h1>Smart Attendance – Automated Face Recognition System</h1>
+            <p class="subtitle">An automated solution replacing manual attendance using advanced face recognition technology</p>
+            
+            <div class="team-info">
+                <div class="team-member">Kamel</div>
+                <div class="team-member">Haya</div>
+                <div class="team-member">Nagam</div>
+                <div class="team-member">Mahmoud</div>
+            </div>
+            
+            <div class="supervisor-info">
+                <p><strong>Supervisor:</strong> Dr. Zaid Al-Lami</p>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content container">
+        <!-- Project Overview -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-project-diagram"></i>
+                <h2>Project Overview</h2>
+            </div>
+            <p class="section-description">An automated solution replacing manual attendance using face recognition technology with a duration of 12 weeks (3 months).</p>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3><i class="fas fa-camera"></i> Core Functionality</h3>
+                    <ul>
+                        <li>Captures student faces via cameras</li>
+                        <li>Identifies students in real-time</li>
+                        <li>Records attendance in centralized database</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-card">
+                    <h3><i class="fas fa-users"></i> Team Size & Roles</h3>
+                    <p><strong>Team Size:</strong> 5 Members</p>
+                    <ul>
+                        <li>Project Manager: Oversees timeline and scope</li>
+                        <li>Software Developers (2): Backend logic and algorithms</li>
+                        <li>UI/UX Designer: Dashboard interface</li>
+                        <li>QA Tester: System validation</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Duration</h3>
+                    <p><strong>12 Weeks (3 Months)</strong></p>
+                    <p>Complete project lifecycle from planning to deployment</p>
+                    <div class="status-badge">
+                        <i class="fas fa-sync-alt"></i> In Progress
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Management Tables -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-table"></i>
+                <h2>Project Management Mapping</h2>
+            </div>
+            
+            <div class="table-navigation">
+                <button class="table-nav-btn active" data-table="scope-table">Scope Management</button>
+                <button class="table-nav-btn" data-table="time-table">Time Management</button>
+                <button class="table-nav-btn" data-table="cost-table">Cost Management</button>
+            </div>
+            
+            <!-- Table 3-1: Project Scope Management Mapping -->
+            <div class="horizontal-table-container active" id="scope-table">
+                <div class="table-header">
+                    <h3><i class="fas fa-tasks"></i> Table 3-1: Project Scope Management Mapping</h3>
+                </div>
+                <div class="horizontal-table">
+                    <div class="table-row header-row">
+                        <div class="table-cell">Scope Component</div>
+                        <div class="table-cell">Description</div>
+                        <div class="table-cell">Deliverable</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Face Recognition System</div>
+                        <div class="table-cell">Automated attendance marking using facial recognition</div>
+                        <div class="table-cell">Functional software system</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Student Enrollment Module</div>
+                        <div class="table-cell">Register students and capture facial data</div>
+                        <div class="table-cell">Database with student profiles</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Real-time Detection</div>
+                        <div class="table-cell">Identify students during class sessions</div>
+                        <div class="table-cell">Live recognition feature</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Attendance Dashboard</div>
+                        <div class="table-cell">Web interface for professors and admins</div>
+                        <div class="table-cell">Web-based dashboard</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Reporting System</div>
+                        <div class="table-cell">Generate attendance reports and analytics</div>
+                        <div class="table-cell">Report generation module</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Notification System</div>
+                        <div class="table-cell">Email alerts for absences</div>
+                        <div class="table-cell">Email notification system</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Table 3-2: Project Time Management Mapping -->
+            <div class="horizontal-table-container" id="time-table">
+                <div class="table-header">
+                    <h3><i class="fas fa-clock"></i> Table 3-2: Project Time Management Mapping</h3>
+                </div>
+                <div class="horizontal-table">
+                    <div class="table-row header-row">
+                        <div class="table-cell">Phase</div>
+                        <div class="table-cell">Duration</div>
+                        <div class="table-cell">Key Activities</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Planning & Research</div>
+                        <div class="table-cell">2 Weeks</div>
+                        <div class="table-cell">Requirements gathering, technology selection</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">System Design</div>
+                        <div class="table-cell">2 Weeks</div>
+                        <div class="table-cell">Architecture design, UI/UX mockups</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Development Phase 1</div>
+                        <div class="table-cell">3 Weeks</div>
+                        <div class="table-cell">Backend development, face recognition algorithm</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Development Phase 2</div>
+                        <div class="table-cell">2 Weeks</div>
+                        <div class="table-cell">Frontend development, database integration</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Testing & QA</div>
+                        <div class="table-cell">2 Weeks</div>
+                        <div class="table-cell">System testing, bug fixes, performance testing</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Deployment & Documentation</div>
+                        <div class="table-cell">1 Week</div>
+                        <div class="table-cell">Deployment, user manual, training materials</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Table 3-3: Project Cost Management Mapping -->
+            <div class="horizontal-table-container" id="cost-table">
+                <div class="table-header">
+                    <h3><i class="fas fa-dollar-sign"></i> Table 3-3: Project Cost Management Mapping</h3>
+                </div>
+                <div class="horizontal-table">
+                    <div class="table-row header-row">
+                        <div class="table-cell">Cost Category</div>
+                        <div class="table-cell">Estimated Cost</div>
+                        <div class="table-cell">Justification</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Hardware (Cameras)</div>
+                        <div class="table-cell">$300</div>
+                        <div class="table-cell">2 HD cameras for face capture</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Server/Hosting</div>
+                        <div class="table-cell">$500</div>
+                        <div class="table-cell">AWS cloud hosting for 12 months</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Software Licenses</div>
+                        <div class="table-cell">$200</div>
+                        <div class="table-cell">Database and development tools</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Development Tools</div>
+                        <div class="table-cell">$150</div>
+                        <div class="table-cell">IDEs, version control, testing tools</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Testing & QA</div>
+                        <div class="table-cell">$100</div>
+                        <div class="table-cell">Testing devices, software licenses</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Training & Documentation</div>
+                        <div class="table-cell">$150</div>
+                        <div class="table-cell">User manuals, training sessions</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Contingency</div>
+                        <div class="table-cell">$250</div>
+                        <div class="table-cell">Unexpected expenses and overruns</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Main Features -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-star"></i>
+                <h2>Main Features (Phase 1)</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>Student Enrollment</h3>
+                    <p>Face data capture and registration system for students</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Real-time Face Detection & Recognition</h3>
+                    <p>Instant identification of students during class sessions</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-check-square"></i>
+                    <h3>Automatic Attendance Marking</h3>
+                    <p>Timestamped attendance records with no manual intervention</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Professor & Admin Dashboards</h3>
+                    <p>User-friendly interfaces for managing attendance data</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Reporting</h3>
+                    <p>Daily/Weekly/Monthly attendance reports and analytics</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Notifications for Absences</h3>
+                    <p>Automatic alerts sent to students and faculty</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Technology Stack -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-code"></i>
+                <h2>Technology Stack</h2>
+            </div>
+            
+            <div class="tech-container">
+                <div class="tech-card">
+                    <h4><i class="fas fa-microchip"></i> Hardware</h4>
+                    <div class="tech-item">
+                        <i class="fas fa-camera"></i>
+                        <span>2 HD Cameras (Logitech C920)</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-server"></i>
+                        <span>Server / AWS Cloud Hosting</span>
+                    </div>
+                </div>
+                
+                <div class="tech-card">
+                    <h4><i class="fas fa-laptop-code"></i> Software</h4>
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python 3.9, OpenCV</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>MySQL Database</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-code"></i>
+                        <span>Flask Framework</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML / CSS / Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Project Budget -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-dollar-sign"></i>
+                <h2>Project Budget</h2>
+            </div>
+            <p class="section-description">Total Budget: <strong class="highlight">$2,500</strong></p>
+            
+            <div class="budget-grid">
+                <div class="budget-item">
+                    <div class="budget-category">Hardware</div>
+                    <div class="budget-amount">$300</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Server/Hosting</div>
+                    <div class="budget-amount">$500</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Database License</div>
+                    <div class="budget-amount">$200</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Development Tools</div>
+                    <div class="budget-amount">$150</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Testing</div>
+                    <div class="budget-amount">$100</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Training/Documentation</div>
+                    <div class="budget-amount">$150</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Marketing</div>
+                    <div class="budget-amount">$150</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Contingency</div>
+                    <div class="budget-amount">$250</div>
+                </div>
+                <div class="budget-item">
+                    <div class="budget-category">Miscellaneous</div>
+                    <div class="budget-amount">$100</div>
+                </div>
+                <div class="budget-item total-budget">
+                    <div class="budget-category">Total Budget</div>
+                    <div class="budget-amount">$2,500</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Risks & Mitigation -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Top Risks & Mitigation</h2>
+            </div>
+            
+            <div class="risks-container">
+                <div class="risk-card">
+                    <h4><i class="fas fa-lightbulb"></i> Low Lighting (Accuracy)</h4>
+                    <p><strong>Mitigation:</strong> Install additional lighting, test in various conditions</p>
+                </div>
+                
+                <div class="risk-card">
+                    <h4><i class="fas fa-user-shield"></i> Privacy Concerns</h4>
+                    <p><strong>Mitigation:</strong> Obtain consent forms, ensure data encryption</p>
+                </div>
+                
+                <div class="risk-card">
+                    <h4><i class="fas fa-clock"></i> Development Delays</h4>
+                    <p><strong>Mitigation:</strong> Add buffer time, track progress regularly</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Success Metrics -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-chart-line"></i>
+                <h2>Success Metrics</h2>
+            </div>
+            
+            <div class="metrics-container">
+                <div class="metric-card">
+                    <h3>Face Recognition Accuracy</h3>
+                    <div class="metric-value">95%+</div>
+                    <p>Target accuracy rate for the system</p>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>Processing Speed</h3>
+                    <div class="metric-value">&lt;2m</div>
+                    <p>To process 30 students</p>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>System Availability</h3>
+                    <div class="metric-value">99%</div>
+                    <p>Uptime and reliability target</p>
+                </div>
+                
+                <div class="metric-card">
+                    <h3>User Satisfaction</h3>
+                    <div class="metric-value">80%+</div>
+                    <p>Minimum satisfaction rate from users</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final Deliverables -->
+        <section class="section fade-in reveal">
+            <div class="section-title">
+                <i class="fas fa-box-open"></i>
+                <h2>Final Deliverables</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Fully Functional Attendance System</h3>
+                    <p>Complete system ready for deployment</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web-based Dashboard</h3>
+                    <p>User interface for professors and administrators</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Student Database</h3>
+                    <p>Secure database with student information</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Technical Documentation & User Manual</h3>
+                    <p>Comprehensive guides for setup and usage</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Training Materials & Test Reports</h3>
+                    <p>Resources for training and validation reports</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <h3>Smart Attendance – Automated Face Recognition System</h3>
+            <p>Project by Kamel, Haya, Nagam, Mahmoud | Supervised by Dr. Zaid Al-Lami</p>
+            <p class="supervisor-info">Duration: 12 Weeks (3 Months) | Budget: $2,500</p>
+            <p class="copyright">&copy; 2025 Smart Attendance System. All project details are for demonstration purposes.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
